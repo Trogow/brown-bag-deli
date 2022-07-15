@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			body {background: grey;}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="navbar">
+				<nav class="navbar navbar-inverse navbar-fixed-top">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" onclick="collapseIconSwap()">
+							<div id="hamburgerIcons">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</div>
+							<div id="crossIcon" style="display:none">
+								<img src="src/x-lg.svg"></i>
+							</div>
+						</button>
+						<a class="navbar-brand" href="#" style="color: white; font-size: 30px;">Brown Bag Deli</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right" id="navbar-items" style="padding:0; margin:0">
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li class="active"><a href="#">Home</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div id="block-zero" style="background:black; height: 50px;">
+			</div>
+			<div id="block-one" class="container" style="background:white; height: 500px; width: 100%; padding: 50px">
+				<div class="col-xs-1" style="min-width: 200px">
+					<div style="width: 100%; margin: auto;">
+					</div>
+				</div>
+				<div class="col-xs-3" style="min-width: 200px">
+					<div style="width: 100%; margin-left: auto; margin-right: 0; padding: 20px">
+						<p>Peter and karen have been serving the Sabal Park area through the Brown Bag Deli since 1993.
+							Brown Bag Deli is family operated and brings a selection of delicious breakfast, lunch, and catering options to guests.
+						</p>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<a href=menu.html">
+						<img src="assets/sandwich1.jpg" class="img-fluid" style="display: block; width: 40%; min-width: 500px; margin-top: auto; margin-left: 20%;"></img>
+					</a>
+				</div>
+			</div>
+			<div id="block-two" style="background:grey; height: 500px">
+			</div>
+		</div>
+	</body>
+	
