@@ -22,14 +22,17 @@ body {
 #block-one {
     background-color:#189a73; 
     padding-top: 40px; 
-    padding-bottom: 25px;
+    padding-bottom: 50px;
     width: 100%;
 }
 #block-two {
-    background-color: white; 
-    min-height: 500px;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
 }
 #block-footer {
-    background-color: grey; 
-    min-height: 300px;
+    background-color: grey;
+    padding-top: 70px;
+    padding-bottom: 30px;
 }
