@@ -1,0 +1,35 @@
+body {
+    min-height: 800px;
+    background-color: #189a73;
+}
+.navbar-header {
+	background-color: #189a73;
+}
+#navbar-items {
+    color: white;
+}
+#nav-links {
+    color: white;
+}
+.navbar-brand {
+    font-size: 35px;
+    color: white;
+}
+#block-zero {
+    background-color: #189a73; 
+    height: 50px;
+}
+#block-one {
+    background-color:#189a73; 
+    padding-top: 40px; 
+    padding-bottom: 25px;
+    width: 100%;
+}
+#block-two {
+    background-color: white; 
+    min-height: 500px;
+}
+#block-footer {
+    background-color: grey; 
+    min-height: 300px;
+}
