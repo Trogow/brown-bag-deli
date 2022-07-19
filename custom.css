@@ -2,6 +2,8 @@ body {
     min-height: 800px;
     background-color: #189a73;
 }
+
+
 .navbar-header {
 	background-color: #189a73;
 }
@@ -16,15 +18,9 @@ body {
     color: white;
 }
 #block-zero {
-    background-color: #189a73; 
-    height: 50px;
+    background-color: #189a73;
 }
-#block-one {
-    background-color:#189a73; 
-    padding-top: 40px; 
-    padding-bottom: 50px;
-    width: 100%;
-}
+
 #block-two {
     background-color: white;
     padding-top: 50px;
@@ -35,4 +31,41 @@ body {
     background-color: grey;
     padding-top: 70px;
     padding-bottom: 30px;
+}
+
+@media (min-width: 576px){
+    h2 {font-size: 60px;}
+    h3 {font-size: 55px;}
+    p {font-size: 48px;}
+    #block-footer{padding-top: 160px;}
+    #block-zero{height: 150px;}
+    #block-one{padding-top: 0px;
+        padding-bottom: 60px;}
+    #block-footer{padding-left: 64px;}
+    #info-div{padding-top: 100px;}
+    #info-links{font-size: 48px;}
+    #deli-door{height: 100%;}
+    #footer-info{font-size: 32px;}
+    #nav-brand{font-size: 60px;}
+    #nav-link{color: white;
+        font-size: 48px;}
+    #navbarText{padding-right: 0px;
+        padding-left: 56px;}
+}
+
+@media (min-width: 992px){
+    h2 {font-size: 32px;}
+    h3 {font-size: 26px;}
+    p {font-size: 25px;}
+    #block-footer{padding-top: 128px;}
+    #block-one{padding-top: 0px;
+        padding-bottom: 80px;}
+    #block-footer{padding-left: 64px;}
+    #info-div{padding-top: 32px;}
+    #info-links{font-size: 25px;}
+    #deli-door{height: 20%;}
+    #footer-info{font-size: 16px;}
+    #nav-brand{font-size: 60px;}
+    #navbarText{padding-right: 32px;
+        padding-left: 0px;}
 }
