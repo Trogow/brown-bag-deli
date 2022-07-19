@@ -2,93 +2,92 @@
 <html lang="en">
 <head>
 	<title>Brown Bag Deli - Home</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@600&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="custom.css">
 </head>
 <body>
-	<div id="container-fluid">
-        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #189a73">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" onclick="collapseIconSwap()">
-                        <div id="hamburgerIcons">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
-                        </div>
-                        <div id="crossIcon" style="display:none">
-                            <img src="assets/x-lg.svg"></i>
-                        </div>
-                    </button>
-                <a class="navbar-brand" href="#" style="color: white">Brown Bag Deli</a>
+    <nav class="navbar navbar-light navbar-expand-xl fixed-top" style="background-color: #189a73">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="nav-brand" href="#" style="font-family: 'Oswald', sans-serif; padding-left: 24px">Brown Bag Deli</a>
+            <button class="navbar-toggler" id="toggle-button"type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" onclick="collapseIconSwap()">
+                <div id="hamburgerIcons" style="display: block">
+                    <img src="assets/hamburger.svg" style="height: 64px">
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#" id="nav-links">Home</a></li>
-                        <li><a href="menu.html" id="nav-links">Menu</a></li>
-                        <li><a href="contact.html" id="nav-links">Find Us</a></li>
-                    </ul>
+                <div id="crossIcon" style="display: none">
+                    <img src="assets/x-lg.svg" style="height: 64px">
                 </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-link" href="#">Find Us</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-		<div id="block-zero">
-		</div>
-		<div id="block-one" class="container-fluid">
-            <div class="col-xs-0 col-sm-1 col-md-1 col-lg-1">
-
+        </div>
+    </nav>
+    <div id="block-zero">
+    </div>
+    <div id="block-one" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-1">
+                <a href="#">
+                    <img src="assets/sandwich.jpg" class="img-fluid" style="width:100%"></img>
+                </a>
             </div>
-			<div class="col-sm-5 col-md-5 col-lg-5">
-				<a href="menu.html">
-					<img src="assets/sandwich.jpg" class="img-fluid" style="width:100%"></img>
-				</a>
-			</div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
-				<div>
+            <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-2 col-lg-5 offset-lg-0" id="info-div">
+                <div>
                     <h3 style="color:white; font-weight: bold;">LET US CATER YOUR NEXT MEETING OR EVENT!</h3>
                     <h2>Order Now!</h2>
-                    <a href="8136213800" style="text-align: center; color: white; font-size: 18px;">(813) 621-3800</a>
+                    <a href="8136213800" id="info-links" style="text-align: center; color: white;">(813) 621-3800</a>
                     <h2>Location</h2>
-                    <a href="https://goo.gl/maps/U9zfsdNpCZy21cgRA" rel="noreferrer noopener" target="_blank" style="color: white; font-size: 18px;">3104 Cherry Palm Dr, Suite 200<br>Tampa, Florida, 33619</a>
+                    <a href="https://goo.gl/maps/U9zfsdNpCZy21cgRA" id="info-links" rel="noreferrer noopener" target="_blank" style="color: white;">3104 Cherry Palm Dr, Suite 200<br>Tampa, Florida, 33619</a>
                     <h2>Hours</h2>
-                    <p style="font-size: 18px; color: white">Monday - Friday<br>7:00 AM - 2:00 PM</p>
-                    <p style="font-size: 18px">Breakfast Served</p>
-                    <p style="font-size: 18px; color: white">7:00 AM - 10:30 AM</p>
+                    <p style="color: white">Monday - Friday<br>7:00 AM - 2:00 PM</p>
+                    <h2>Breakfast Served</h2>
+                    <p style="color: white">7:00 AM - 10:30 AM</p>
                     
                 </div>
-			</div>
-		</div>
-		<div id="block-two" class="container-fluid">
-            <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2">
-
             </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
-				<div>
-                    <p style="font-size: 25px; color: black; padding-bottom: 50px; padding-top: 40px;">Peter and karen have been serving the Sabal Park area through the Brown Bag Deli since 1993.
+        </div>
+    </div>
+    <div id="block-two" class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-4 offset-lg-2">
+                <div>
+                    <p id ="short-bio" style="padding-bottom: 50px; padding-top: 40px;">Peter and karen have been serving the Sabal Park area through the Brown Bag Deli since 1993.
                         Brown Bag Deli is family operated and brings a selection of delicious breakfast, lunch, and catering options to guests.
                     </p>
-				</div>
-			</div>
-            <div class="col-sm-8 col-md-5 col-lg-6">
-				<div>
-                    <img src="assets/deli_door.jpg" class="img-fluid" style="width:80%"></img>
-				</div>
-			</div>
+                </div>
+            </div>
+            <div class="col-md-10 offset-md-2 col-lg-4 offset-lg-0">
+                <div id="deli-door-div">
+                    <img src="assets/deli_door.jpg" id="deli-door" class="img-fluid"></img>
+                </div>
+            </div>
         </div>
-		<div id="block-footer" class="container-fluid">
-			<footer>
-                <p style="color: white; font-size: 15px;">
-                    Brown Bag Deli<br>
-                    <a href="8136213800" style="color: white">(813) 621-3800</a><br>
-                    <a href="https://goo.gl/maps/U9zfsdNpCZy21cgRA" rel="noreferrer noopener" target="_blank" style="color: white;">3104 Cherry Palm Dr, Suite 200<br>Tampa, Florida, 33619</a><br>
-                    <br>
-                    Website by Rogo Tech Solutions
-                </p>
-			</footer>
-		</div>
-
-	</div>
+    </div>
+    <div id="block-footer" class="container-fluid">
+        <footer>
+            <p id="footer-info" style="color: white;">
+                Brown Bag Deli<br>
+                <a href="8136213800" id="footer-info" style="color: white">(813) 621-3800</a><br>
+                <a href="https://goo.gl/maps/U9zfsdNpCZy21cgRA" id="footer-info" rel="noreferrer noopener" target="_blank" style="color: white;">3104 Cherry Palm Dr, Suite 200<br>Tampa, Florida, 33619</a><br>
+                <br>
+                Website by Rogo Tech Solutions
+            </p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 function collapseIconSwap() {
 	var crossIcon = document.getElementById("crossIcon");
 	var hamburgerIcon = document.getElementById("hamburgerIcons");
-	if (!$("#myNavbar").is(":visible")) {
+	if (hamburgerIcon.style.display == "block") {
 		hamburgerIcon.style.display="none";
 		crossIcon.style.display="block";
 	}

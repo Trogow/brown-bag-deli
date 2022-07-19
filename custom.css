@@ -3,20 +3,34 @@ body {
     background-color: #189a73;
 }
 
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+#short-bio {
+    font-family: 'Courgette', cursive;
+}
 
 .navbar-header {
 	background-color: #189a73;
-}
-#navbar-items {
-    color: white;
-}
-#nav-links {
-    color: white;
 }
 .navbar-brand {
     font-size: 35px;
     color: white;
 }
+
+
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+}
+.nav-link:hover {
+    color: black !important;
+}
+
+
 #block-zero {
     background-color: #189a73;
 }
